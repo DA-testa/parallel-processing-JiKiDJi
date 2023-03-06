@@ -1,7 +1,7 @@
 # python3
 
 def parallel_processing(n, m, data):
-    output = [[0]*n]*m
+    output = [[0]*2]*m
     nums = [0]*n
     step = 0
     data_used = 0
