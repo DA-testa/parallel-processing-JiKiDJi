@@ -8,7 +8,7 @@ def parallel_processing(n, m, data):
     while True:
         for i in range(n):
             if nums[i]==step:
-                nums[i]+=data[data_used]
+                nums[i]+=int(data[data_used])
                 output[data_used] = [i,step]
                 data_used+=1
         step+=1
@@ -25,15 +25,14 @@ def main():
     # first line - n and m
     # n - thread count 
     # m - job count
-    n = int(input())
-    m = int(input())
+    n,m = input().split()
+    n = int(n)
+    m = int(m)
 
     # second line - data 
     # data - contains m integers t(i) - the times in seconds it takes any thread to process i-th job
     
-    data = [0]*m
-    for i in range(m):
-        data[i] = int(input())
+    data = input().split()
     
 
     # TODO: create the function
