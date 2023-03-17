@@ -1,7 +1,7 @@
 # python3
 
 def parallel_processing(n, m, data):
-    output = [[0]*2]*m
+    output = [0]*m
     nums = [0]*n
     step = 0
     data_used = 0
@@ -38,8 +38,8 @@ def main():
     # TODO: create the function
     result = parallel_processing(n,m,data)
     
-    for i in range(m):
-        print(*result[i], sep = ' ')
+    for i, j in result:
+        print(i, j)
 
     # TODO: print out the results, each pair in it's own line
 
